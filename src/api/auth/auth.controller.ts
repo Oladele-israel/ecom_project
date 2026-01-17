@@ -35,15 +35,15 @@ export class AuthController {
     }
 
 
-//   @Post('refresh')
-//   async refresh(@Body('refreshToken') token: string) {
-//     return this.authService.refresh(token);
-//   }
+    @Post('refresh')
+    async refresh(@Body('refreshToken') token: string) {
+        return this.authService.refresh(token);
+    }
 
-//   @UseGuards(BearerAuthGuard)
-//   @Post('logout')
-//   async logout(@Req() req) {
-//     await this.authService.logout(req.user.sessionId);
-//     return { success: true };
-//   }
+    //   @UseGuards(BearerAuthGuard)
+    //   @Post('logout')
+    //   async logout(@Req() req) {
+    //     await this.authService.logout(req.user.sessionId);
+    //     return { success: true };
+    //   }
 }
